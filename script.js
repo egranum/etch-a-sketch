@@ -10,3 +10,11 @@ window.onload = () => {
         containerDiv.appendChild(newDiv);
     }
 }
+const containerDiv = document.querySelector('.container');
+
+containerDiv.addEventListener('mouseover', function(event) {
+    if(event.target.className.toLowerCase() === 'grid-item') {
+        console.log(event.target);
+        event.target.classList.add('grid-item-active');
+    }
+})

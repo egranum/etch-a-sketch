@@ -1,0 +1,15 @@
+.container {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+/* 
+.grid-item:hover {
+    background-color:black;
+} */
+
+.grid-item-active {
+    background-color: black;
+}
