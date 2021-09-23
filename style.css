@@ -1,14 +1,40 @@
-.container {
-    width: 400px;
-    height: 400px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+:root {
+    --colNum: 0;
+    --rowNum: 0;
 }
-/* 
-.grid-item:hover {
-    background-color:black;
-} */
+
+.reset-div {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.reset-button {
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+    color: floralwhite;
+    background-color: dimgrey;
+    border-radius: 10px;
+    border: none;
+    padding: 0px;
+}
+
+.reset-button:hover {
+    background-color: #545454;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.container {
+    width: 960px;
+    height: 960px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(var(--colNum), 1fr);
+    grid-template-rows: repeat(var(--rowNum), 1fr);
+}
+
 
 .grid-item-active {
     background-color: black;
